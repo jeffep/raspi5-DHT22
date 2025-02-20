@@ -12,8 +12,9 @@ that to work.
 Instead when the PI sends the wakeup signal, I turn the GPIO to input
 and immediately start sampling the line.  On the WIZNET Surf 7500 board
 even this was too slow and I had to overclock the board by a factor of 4.
-This would result in 5 samplings of 3.3v for a '0' bit.  Fortunately the
-Raspberry PI is much faster and reads roughly 21 samples for a '0'.  Read
+This would result in 5 samplings of 3.3v for a '0' bit.  Unfortunately,
+the board became unstable from the overclocking.  Fortunately the
+Raspberry PI 5 is much faster and reads roughly 21 samples for a '0'.  Read
 all this data into an array and then it's easily deconstructed into the
 good data.
 
