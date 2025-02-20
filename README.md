@@ -19,7 +19,7 @@ all this data into an array and then it's easily deconstructed into the
 good data.
 
 The executable has -h for help.  Default is to use 3.3v, ground, and PIN7 = GPIO4 for
-the DHT connections.  I didn't have the recommended 4.7k Ohm resistor, but I had a 10k
+the DHT connections (I used 1,6,7).  I didn't have the recommended 4.7k Ohm resistor, but I had a 10k
 lying around so I used that and it worked.  But I never used a resistor on the PICOs.
 
 ![image](https://github.com/user-attachments/assets/f5854292-9264-40d1-b415-f4fd901e9641)
