@@ -2,7 +2,8 @@
 C++ code for connecting a DHT22 temperature sensor to the Raspberry Pi 5
 
 Apparently the libraries for accessing GPIO, wiringpi is being deprecated.
-I used gpiod library instead.
+I used gpiod library instead.  I downloaded v2.3 off github and used that
+in /usr/include (instead of /usr/local/include where apt get put it's latest).
 
 All my AI helpers suggested using interrupts to watch for and wait until
 3.3v (1) was detected and to read the data that way.  I could not get
